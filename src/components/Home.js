@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import WhatsAppButton from './WhatsAppButton';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,13 +42,11 @@ const Home = () => {
       {/* Hero Section with Carousel */}
       <div className="relative h-[600px] overflow-hidden group">
         <div className="absolute inset-0 bg-black/50 z-10 flex items-center justify-center text-white text-center px-4">
-          <div className="max-w-3xl transform transition-transform duration-500 hover:scale-105">
-            <h1 className="text-5xl font-bold mb-6 animate-fade-in">Tu espacio de trabajo ideal</h1>
-            <p className="text-xl mb-8">Descubre un ambiente profesional diseñado para impulsar tu productividad y creatividad</p>
-            <button className="bg-green-600 text-white px-8 py-3 rounded-lg text-lg transform transition-all duration-300 hover:bg-green-700 hover:scale-105 hover:shadow-xl active:scale-95">
-              Agenda un recorrido
-            </button>
-          </div>
+        <div className="max-w-3xl transform transition-transform duration-500 hover:scale-105">
+  <h1 className="text-5xl font-bold mb-6 animate-fade-in">Tu espacio de trabajo ideal</h1>
+  <p className="text-xl mb-8">Descubre un ambiente profesional diseñado para impulsar tu productividad y creatividad</p>
+  <WhatsAppButton />
+</div>
         </div>
         
         <div className="relative h-full">
